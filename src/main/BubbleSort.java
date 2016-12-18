@@ -1,15 +1,28 @@
 package main;
 
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+
 /**
  * Created by HarshPatil on 12/17/16.
  */
 public class BubbleSort {
 
-    public static void main (String args[]) throws Exception{
+    public static void main(String args[]) throws Exception {
 
-        int inputArray[] = {2,3,1,-5,4,8};
+        System.out.println("Enter total number of elements");
+        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
+        String totalElements = bufferedReader.readLine();
+        int arrayLength = Integer.parseInt(totalElements);
 
-        int arrayLength = inputArray.length;
+        int inputArray[] = new int[arrayLength];
+        System.out.println("Enter "+ arrayLength + " integers");
+        for(int i=0; i<arrayLength; i++){
+
+            bufferedReader = new BufferedReader(new InputStreamReader(System.in));
+            inputArray[i] = Integer.parseInt(bufferedReader.readLine());
+        }
+
         System.out.print("Input Array ::: {");
         for(int i=0; i<arrayLength; i++){
 
