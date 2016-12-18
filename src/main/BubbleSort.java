@@ -22,6 +22,7 @@ public class BubbleSort {
 
         for(int i=0; i<arrayLength-1; i++){
 
+            boolean flag = false;
             for(int j=0; j<arrayLength-i-1; j++){
 
                 if(inputArray[j] > inputArray [j+1]){
@@ -29,7 +30,11 @@ public class BubbleSort {
                     int temp = inputArray[j+1];
                     inputArray[j+1] = inputArray[j];
                     inputArray[j] = temp;
+                    flag = true;
                 }
+            }
+            if(flag == false){
+                break;
             }
         }
 
