@@ -11,7 +11,7 @@ public class IOInJava {
 
     public static void main(String args[]) throws IOException{
 
-        System.out.println("Input number ::: ");
+        System.out.println("Enter input ::: ");
         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
         String input = bufferedReader.readLine();
 

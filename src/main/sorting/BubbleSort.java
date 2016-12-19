@@ -1,4 +1,4 @@
-package main;
+package main.sorting;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
@@ -33,6 +33,21 @@ public class BubbleSort {
         }
         System.out.print("}\n");
 
+        bubbleSort(arrayLength, inputArray);
+
+        System.out.print("Sorted Array ::: {");
+        for(int i=0; i<arrayLength; i++){
+
+            System.out.print(inputArray[i]);
+            if(i!=arrayLength-1){
+                System.out.print(",");
+            }
+        }
+        System.out.print("}");
+    }
+
+    public static void bubbleSort(int arrayLength, int[] inputArray){
+
         for(int i=0; i<arrayLength-1; i++){
 
             boolean flag = false;
@@ -50,15 +65,5 @@ public class BubbleSort {
                 break;
             }
         }
-
-        System.out.print("Sorted Array ::: {");
-        for(int i=0; i<arrayLength; i++){
-
-            System.out.print(inputArray[i]);
-            if(i!=arrayLength-1){
-                System.out.print(",");
-            }
-        }
-        System.out.print("}");
     }
 }
