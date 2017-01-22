@@ -62,7 +62,7 @@ public class SparseArrays {
             searchStringList.add(bufferedReader.readLine());
         }
 
-        // Sorting input string list so that we can stop the moment search string is bigger than input string
+        //  Sorting input string list so that we can stop the moment search string is bigger than input string
         Collections.sort(inputStringList);
         System.out.println("Sorted Array :::" + inputStringList);
 
