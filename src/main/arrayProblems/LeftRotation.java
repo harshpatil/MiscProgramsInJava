@@ -1,4 +1,4 @@
-package main.ArrayProblems;
+package main.arrayProblems;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;

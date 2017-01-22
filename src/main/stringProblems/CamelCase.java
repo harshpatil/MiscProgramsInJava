@@ -1,4 +1,4 @@
-package main.StringProblems;
+package main.stringProblems;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
