@@ -53,7 +53,7 @@ public class BubbleSort {
             boolean flag = false;
             for(int j=0; j<arrayLength-i-1; j++){
 
-                if(inputArray[j] > inputArray [j+1]){
+                if(inputArray[j] > inputArray[j+1]){
 
                     int temp = inputArray[j+1];
                     inputArray[j+1] = inputArray[j];
