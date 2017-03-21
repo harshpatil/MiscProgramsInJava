@@ -6,6 +6,12 @@ package main.linkedList;
 public class Node {
 
     private int data;
+    private Node next;
+
+    public Node(int data){
+
+        this.data = data;
+    }
 
     public int getData() {
         return data;
@@ -21,13 +27,6 @@ public class Node {
 
     public void setNext(Node next) {
         this.next = next;
-    }
-
-    private Node next;
-
-    public Node(int data){
-
-        this.data = data;
     }
 
     public void displayNode(){

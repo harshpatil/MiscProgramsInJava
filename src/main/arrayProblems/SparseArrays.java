@@ -3,9 +3,7 @@ package main.arrayProblems;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.io.StringReader;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
+import java.util.*;
 
 /**
  *   There are N strings. Each string's length is no more than 20 characters. There are also Q queries.
@@ -62,30 +60,26 @@ public class SparseArrays {
             searchStringList.add(bufferedReader.readLine());
         }
 
-        // Sorting input string list so that we can stop the moment search string is bigger than input string
-        Collections.sort(inputStringList);
-        System.out.println("Sorted Array :::" + inputStringList);
+        Map<String, Integer> inputStringToCountMap = new HashMap<String, Integer>();
+        for(int i=0; i<totalNumberOfStrings; i++){
 
-        int result[] = new int[totalSearchStrings];
-        for(int j=0; j<totalSearchStrings; j++){
-
-            int count = 0;
-            for(int i=0; i<totalNumberOfStrings; i++){
-
-                if(searchStringList.get(j).compareTo(inputStringList.get(i)) > 0) {
-                    break;
-                }
-                if (searchStringList.get(j).equals(inputStringList.get(i))) {
-                        count++;
-                }
+            if(inputStringToCountMap.containsKey(inputStringList.get(i))){
+                int count = inputStringToCountMap.get(inputStringList.get(i));
+                count = count + 1;
+                inputStringToCountMap.put(inputStringList.get(i), count);
+            } else {
+                inputStringToCountMap.put(inputStringList.get(i), 1);
             }
-            result[j] = count;
         }
 
         System.out.println("Result Count");
         for(int i=0; i<totalSearchStrings; i++){
 
-            System.out.println(searchStringList.get(i) +":::" + result[i]);
+            if(inputStringToCountMap.containsKey(searchStringList.get(i))){
+                System.out.println(inputStringToCountMap.get(searchStringList.get(i)));
+            }else{
+                System.out.println(0);
+            }
         }
     }
 }

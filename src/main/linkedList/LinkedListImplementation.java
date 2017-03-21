@@ -2,6 +2,8 @@ package main.linkedList;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
+import java.util.Hashtable;
+import java.util.LinkedList;
 
 /**
  * Created by HarshPatil on 10/28/16.
@@ -9,6 +11,25 @@ import java.io.InputStreamReader;
 public class LinkedListImplementation {
 
     public static void main(String args[]) throws Exception {
+
+//        Node head;
+//        Node node = new Node(3);
+//        node.setNext(null);
+//        head = node;
+//
+//        Node node2 = new Node(6);
+//        node2.setNext(null);
+//        node.setNext(node2);
+//
+//        Node node3 = new Node(8);
+//        node3.setNext(null);
+//        node2.setNext(node3);
+//
+//        Node current = head;
+//        while (current!=null){
+//            System.out.print(current.getData() + "->");
+//            current = current.getNext();
+//        }
 
         NodeList nodeList = new NodeList();
         nodeList.insertNodeAtBeginning(1);

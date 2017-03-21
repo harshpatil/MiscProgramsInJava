@@ -46,6 +46,4 @@ public class PlatformsNeeded {
         }
         return result;
     }
-
-
 }
