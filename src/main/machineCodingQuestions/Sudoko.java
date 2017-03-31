@@ -1,10 +1,6 @@
-package main.uber;
-
-import com.sun.tools.javah.Util;
+package main.machineCodingQuestions;
 
 import java.util.HashMap;
-
-import static java.lang.System.exit;
 
 /**
  *
