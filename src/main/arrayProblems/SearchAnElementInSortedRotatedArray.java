@@ -39,7 +39,6 @@ public class SearchAnElementInSortedRotatedArray {
                     last = mid-1;
                 }
             }
-
         }
         System.out.println("Element "+searchString+ " is not present in Array");
     }
