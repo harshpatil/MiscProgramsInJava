@@ -53,7 +53,6 @@ public class SnakeAndLadderGame {
             if(snakeMap.containsKey(currentPosition)){
                 System.out.println("Snake Found :::: Head of Snake :: " + currentPosition + " & Tail :: " + snakeMap.get(currentPosition));
                 currentPosition = snakeMap.get(currentPosition);
-
             }
             if(ladderMap.containsKey(currentPosition)){
                 System.out.println("Ladder Found :::: Head of ladder :: " + currentPosition + " & Tail :: " + ladderMap.get(currentPosition));
