@@ -1,19 +1,23 @@
 package main.machineCodingQuestions;
 
 import java.util.HashMap;
+import java.util.LinkedHashMap;
 
 /**
  *
- * Write a program for Sudoko game
+ * Write a program for Sudoku game
  * 1) each row and column should not have duplicate numbers
  * 2) Each grid(3*3) should not have duplicate values
  * 3) Number should be between 1 and 9
  *
  * Created by HarshPatil on 3/26/17.
  */
-public class Sudoko {
+public class Sudoku {
 
     public static void main(String []args){
+
+        LinkedHashMap<Integer, Integer> list = new LinkedHashMap<>();
+
 
         boolean valid;
         int[][] board = {{7,6,9,3,4,2,1,5,8},
@@ -33,15 +37,15 @@ public class Sudoko {
 //            if(isColumnValid){
                 boolean isGridValid = checkGridValidity(board);
                 if (isGridValid){
-                    System.out.println("Valid Sudoko");
+                    System.out.println("Valid Sudoku");
                 } else {
-                    System.out.println("InValid Sudoko");
+                    System.out.println("InValid Sudoku");
                 }
 //            } else {
-//                System.out.println("InValid Sudoko");
+//                System.out.println("InValid Sudoku");
 //            }
         }else {
-            System.out.println("InValid Sudoko");
+            System.out.println("InValid Sudoku");
         }
     }
 

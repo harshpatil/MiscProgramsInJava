@@ -7,7 +7,7 @@ import java.util.Map;
 /**
  * Created by HarshPatil on 4/2/17.
  */
-public class DisplaySingleOccuranceNumberInAnArray {
+public class DisplaySingleOccuringNumberInAnArray {
 
     static int array[] = {1, 2, 3, 5, 2, 2, 3, 4};
 
