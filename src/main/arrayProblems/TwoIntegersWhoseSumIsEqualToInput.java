@@ -10,6 +10,16 @@ import java.util.Arrays;
  */
 public class TwoIntegersWhoseSumIsEqualToInput {
 
+    /*
+    Logic : 1) Sort the given Array
+            2) start 2 pointers one from each end
+            3) Add first and last element, if sum is equal to input number, print
+            4) if sum is lesser than input, increment starting pointer
+            5) if sum in greater than input, increment ending pointer
+            6) Repeat steps from 3 till first pointer <= second pointer
+               If sum =! input, then there aren't 2 such elements whose sum is equal to input int
+    */
+
     static int array[] = {2, 5, 6, 8, 9, 10, 1, 7};
 
     public static void main(String []args) throws Exception {
