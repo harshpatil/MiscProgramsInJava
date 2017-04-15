@@ -18,6 +18,9 @@ public class TwoIntegersWhoseSumIsEqualToInput {
             5) if sum in greater than input, increment ending pointer
             6) Repeat steps from 3 till first pointer <= second pointer
                If sum =! input, then there aren't 2 such elements whose sum is equal to input int
+
+           Time complexity : O(n) if Array is sorted
+                             O(n*Logn) if Array is not sorted
     */
 
     static int array[] = {2, 5, 6, 8, 9, 10, 1, 7};

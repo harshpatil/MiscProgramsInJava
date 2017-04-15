@@ -8,8 +8,12 @@ import java.util.*;
 public class CheckIfFrequencyOfAllCharactersCanBecomeSameByOneRemoval {
 
     /*
-       LOGIC : 1) Create an integer array with index as ASCII value
-                Complete this part
+       LOGIC : 1) Create an integer array with index as ASCII value of char & occurrence as value
+               2) Create a map such that occurance as key and list of char as value
+               3) If map size become more than 2, then it's not possible
+               4) If difference between any two non zero frequency is more than 1, it's not possible
+
+           Time Complexity = O(n)
      */
 
     static String input = "xyyz";
