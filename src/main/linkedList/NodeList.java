@@ -11,6 +11,14 @@ public class NodeList {
 
     private Node first;
 
+    public Node getFirst() {
+        return first;
+    }
+
+    public void setFirst(Node first) {
+        this.first = first;
+    }
+
     public NodeList(){
         first = null;
     }
@@ -25,6 +33,15 @@ public class NodeList {
     public void insertNodeAtEnd(int data){
 
         Node node = new Node(data);
+        Node temp = first;
+        while(temp.getNext()!=null){
+            temp = temp.getNext();
+        }
+        temp.setNext(node);
+    }
+
+    public void insertNodeAtEnd(Node node){
+
         Node temp = first;
         while(temp.getNext()!=null){
             temp = temp.getNext();
@@ -105,5 +122,14 @@ public class NodeList {
             }
             previous.setNext(temp.getNext());
         }
+    }
+
+    public void loopNode(Node node){
+
+        Node current = first;
+        while(current.getNext()!=null){
+            current = current.getNext();
+        }
+        current.setNext(node);
     }
 }
