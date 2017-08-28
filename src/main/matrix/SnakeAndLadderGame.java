@@ -1,10 +1,8 @@
-package main.machineCodingQuestions;
+package main.matrix;
 
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Random;
-
-import static main.machineCodingQuestions.SnakeAndLadderGame.createSnakeMap;
 
 /**
  * Created by HarshPatil on 3/30/17.

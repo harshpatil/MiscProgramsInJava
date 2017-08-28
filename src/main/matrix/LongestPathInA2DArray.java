@@ -1,4 +1,4 @@
-package main.machineCodingQuestions;
+package main.matrix;
 
 /**
  *
