@@ -1,4 +1,4 @@
-package main;
+package main.random;
 
 import java.io.BufferedReader;
 import java.io.IOException;

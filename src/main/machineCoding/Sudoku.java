@@ -1,4 +1,4 @@
-package main.matrix;
+package main.machineCoding;
 
 import java.util.HashMap;
 import java.util.LinkedHashMap;

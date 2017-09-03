@@ -1,4 +1,4 @@
-package main;
+package main.machineCoding;
 
 import java.util.Arrays;
 
