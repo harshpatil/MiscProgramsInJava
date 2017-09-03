@@ -32,6 +32,8 @@ package main.matrix;
      1 1 1 1
      1 0 1 1
 
+    http://www.geeksforgeeks.org/a-boolean-matrix-question/
+
  * Created by HarshPatil on 8/28/17.
  */
 public class BooleanMatrixQuestion {

@@ -30,53 +30,17 @@ public class Sudoku {
                         {2,7,1,8,3,6,9,4,5},
                         {9,4,6,5,2,7,8,3,1}};
 
-//        boolean isRowValid = checkRowValidity(board);
         boolean isRowAndColumnValid = checkRowAndColumnValidity(board);
         if(isRowAndColumnValid){
-//            boolean isColumnValid = checkColumnValidity(board);
-//            if(isColumnValid){
                 boolean isGridValid = checkGridValidity(board);
                 if (isGridValid){
                     System.out.println("Valid Sudoku");
                 } else {
                     System.out.println("InValid Sudoku");
                 }
-//            } else {
-//                System.out.println("InValid Sudoku");
-//            }
         }else {
             System.out.println("InValid Sudoku");
         }
-    }
-
-    public static boolean checkRowValidity(int[][] board){
-
-        for(int i=0;i<board.length; i++){
-            HashMap<Integer, Integer> map = new HashMap<>();
-            for (int j=0;j<board.length; j++){
-                if(map.containsKey(board[i][j]) || (board[i][j]<1 || board[i][j]>9)){
-                    return false;
-                } else {
-                    map.put(board[i][j], 1);
-                }
-            }
-        }
-        return true;
-    }
-
-    public static boolean checkColumnValidity(int[][] board){
-
-        for(int j=0;j<board.length; j++){
-            HashMap<Integer, Integer> map = new HashMap<>();
-            for (int i=0;i<board.length; i++){
-                if(map.containsKey(board[i][j]) || (board[i][j]<1 || board[i][j]>9)){
-                    return false;
-                } else {
-                    map.put(board[i][j], 1);
-                }
-            }
-        }
-        return true;
     }
 
     public static boolean checkGridValidity(int[][] board) {

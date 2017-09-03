@@ -20,6 +20,8 @@ package main.matrix;
      18    15    12
      19    16
      20
+
+    http://www.geeksforgeeks.org/zigzag-or-diagonal-traversal-of-matrix/
  *
  * Created by HarshPatil on 9/2/17.
  */
