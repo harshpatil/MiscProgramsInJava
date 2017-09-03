@@ -9,10 +9,12 @@ package main.matrix;
          {0, 1, 0, 0, 1}
          {1, 1, 1, 0, 0}
 
-    Output:
+     Output:
          0 1 0 0 1
          1 0 1 1 0
          1 1 1 0 0
+
+    http://www.geeksforgeeks.org/print-unique-rows/
 
  * Created by HarshPatil on 9/2/17.
  */
