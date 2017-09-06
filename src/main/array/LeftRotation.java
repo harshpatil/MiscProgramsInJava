@@ -6,7 +6,7 @@ import java.io.InputStreamReader;
 /**
  *
  *
- *  Print a single line of  space-separated integers denoting the final state of the array after performing  left rotations.
+ *  Print a singly line of  space-separated integers denoting the final state of the array after performing  left rotations.
  *
  *  Sample Input
      5 4

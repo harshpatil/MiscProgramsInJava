@@ -12,7 +12,7 @@ import java.io.InputStreamReader;
      as it can be performed. Help Steve out by finding and printing 's non-reducible form!
      Note: If the final string is empty, print Empty String .
      Input Format
-     A single string, .
+     A singly string, .
      Constraints
      *
      Output Format

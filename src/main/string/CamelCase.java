@@ -10,7 +10,7 @@ import java.io.InputStreamReader;
  * For each of the subsequent words, the first letter is uppercase and rest of the letters are lowercase.
      Given , print the number of words in  on a new line.
      Input Format
-     A single line containing string .
+     A singly line containing string .
      Constraints
      *
      Output Format
