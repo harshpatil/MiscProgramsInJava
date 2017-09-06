@@ -32,7 +32,6 @@ public class CheckIfAGivenStringIsPalindrome {
             i++;
             j--;
         }
-
         System.out.println(inputString + " is a Palindrome");
     }
 }
