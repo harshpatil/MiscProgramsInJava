@@ -54,6 +54,9 @@ public class CheckIfAGivenStringIsARotationOfAPalindrome {
                 }
             }
         } else {
+
+            // FIX THIS
+
             for (int i=1; i<inputString.length(); i++){
                 if(inputString.charAt(i-1) == inputString.charAt(i)){
                     int left = (i+inputString.length()-2)%inputString.length();
