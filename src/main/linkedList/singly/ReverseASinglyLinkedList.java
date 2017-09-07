@@ -21,13 +21,13 @@ public class ReverseASinglyLinkedList {
     private static void reverseTheLinkedList(SinglyLinkedList sll) {
 
         SinglyLinkedListNode prev = null;
-        SinglyLinkedListNode current = sll.head;
-        SinglyLinkedListNode temp = null;
-        while (current != null){
-            temp = current.next;
+        SinglyLinkedListNode current = null;
+        SinglyLinkedListNode temp = sll.head;
+        while (temp != null){
+            current = temp;
+            temp = temp.next;
             current.next = prev;
             prev = current;
-            current = temp;
         }
         sll.head = prev;
     }
