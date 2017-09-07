@@ -1,8 +1,6 @@
 package main.linkedList.singly;
 
-/**
- * Created by HarshPatil on 8/26/17.
- */
+
 public class CheckIfLinkedListHasLoop {
 
     public static void main(String []args){
