@@ -1,6 +1,15 @@
 package main.tree;
 
-public class CreateABinaryTreeAndPrintItsData {
+
+/*
+    http://www.geeksforgeeks.org/binary-tree-set-1-introduction/
+    http://www.geeksforgeeks.org/binary-tree-set-2-properties/
+    http://www.geeksforgeeks.org/binary-tree-set-3-types-of-binary-tree/
+
+    Inorder, Preorder, Postorder traversal are Depth First Traversal methods
+ */
+
+public class CreateBinaryTreeAndPrintItsDataUsingDFS {
 
     public static void main(String[] args){
 

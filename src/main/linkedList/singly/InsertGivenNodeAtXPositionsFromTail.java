@@ -1,6 +1,6 @@
 package main.linkedList.singly;
 
-public class InsertiGivenNodeAtXPositionsFromTail {
+public class InsertGivenNodeAtXPositionsFromTail {
 
     public static void main(String[] args){
 
