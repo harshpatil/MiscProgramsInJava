@@ -10,7 +10,7 @@ import java.util.Queue;
 
     Time Complexity: O(n)
  */
-public class CreateBinaryTreeAndPrintItsDataUsingBFS {
+public class PrintTreeUsingBFS {
 
     public static void main(String[] args){
 

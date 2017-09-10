@@ -24,7 +24,7 @@ import java.util.Stack;
     Time Complexity: O(n)
 
  */
-public class ReverseLevelOrderTraversal {
+public class PrintTreeUsingBFSUlta {
 
     public static void main(String[] args){
 
@@ -38,7 +38,6 @@ public class ReverseLevelOrderTraversal {
         tree.root.right.right = new TreeNode(7);
 
         traverseTreeUsingBFSReverse(tree.root);
-
     }
 
     private static void traverseTreeUsingBFSReverse(TreeNode root) {

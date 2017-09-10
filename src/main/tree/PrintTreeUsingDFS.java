@@ -11,7 +11,7 @@ package main.tree;
     Time Complexity: O(n)
  */
 
-public class CreateBinaryTreeAndPrintItsDataUsingDFS {
+public class PrintTreeUsingDFS {
 
     public static void main(String[] args){
 
