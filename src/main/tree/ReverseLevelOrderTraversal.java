@@ -21,6 +21,8 @@ import java.util.Stack;
     So to get the correct sequence (left to right at every level), we process children
     of a node in reverse order, we first push the right subtree to stack, then left subtree.
 
+    Time Complexity: O(n)
+
  */
 public class ReverseLevelOrderTraversal {
 

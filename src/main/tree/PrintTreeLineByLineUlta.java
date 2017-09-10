@@ -6,6 +6,8 @@ import java.util.Stack;
 
 /*
     Here print the tree ulta
+
+    Time Complexity: O(n)
  */
 public class PrintTreeLineByLineUlta {
 

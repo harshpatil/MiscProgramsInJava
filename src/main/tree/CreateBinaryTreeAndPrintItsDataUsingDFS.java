@@ -7,6 +7,8 @@ package main.tree;
     http://www.geeksforgeeks.org/binary-tree-set-3-types-of-binary-tree/
 
     Inorder, Preorder, Postorder traversal are Depth First Traversal methods
+
+    Time Complexity: O(n)
  */
 
 public class CreateBinaryTreeAndPrintItsDataUsingDFS {

@@ -7,6 +7,8 @@ import java.util.Queue;
     http://www.geeksforgeeks.org/level-order-tree-traversal/
 
     This is also called as Level Order Traversal
+
+    Time Complexity: O(n)
  */
 public class CreateBinaryTreeAndPrintItsDataUsingBFS {
 
