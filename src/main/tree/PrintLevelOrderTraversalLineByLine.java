@@ -9,6 +9,8 @@ import java.util.Queue;
 
     http://www.geeksforgeeks.org/print-level-order-traversal-line-line/
 
+    Solution: This is nothing but BFS with node count at each level
+
  */
 public class PrintLevelOrderTraversalLineByLine {
 
