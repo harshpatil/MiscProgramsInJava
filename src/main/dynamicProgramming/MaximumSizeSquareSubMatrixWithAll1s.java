@@ -34,24 +34,24 @@ public class MaximumSizeSquareSubMatrixWithAll1s {
 
         int row = inputMatrix.length;
         int column = inputMatrix[0].length;
-        int subMtrix[][] = new int[row][column];
+        int subMatrix[][] = new int[row][column];
 
         // copy first column as is
         for(int i=0; i<column; i++){
-            subMtrix[0][i] = inputMatrix[0][i];
+            subMatrix[0][i] = inputMatrix[0][i];
         }
 
         // copy first row as is
         for (int i=0; i<row; i++){
-            subMtrix[i][0] = inputMatrix[i][0];
+            subMatrix[i][0] = inputMatrix[i][0];
         }
 
         for (int i=1; i<row; i++){
             for(int j=1; j<column; j++){
                 if(inputMatrix[i][j] == 1){
-                    subMtrix[i][j] = Math.min(subMtrix[i-1][j], Math.min(subMtrix[i-1][j-1], subMtrix[i][j-1])) + 1;
+                    subMatrix[i][j] = Math.min(subMatrix[i-1][j], Math.min(subMatrix[i-1][j-1], subMatrix[i][j-1])) + 1;
                 } else {
-                    subMtrix[i][j] = 0;
+                    subMatrix[i][j] = 0;
                 }
             }
         }
@@ -59,19 +59,19 @@ public class MaximumSizeSquareSubMatrixWithAll1s {
         System.out.println("Sub matrix with weight ::: ");
         for(int i=0; i<row; i++){
             for (int j=0;j <column; j++){
-                System.out.print(subMtrix[i][j] + " ");
+                System.out.print(subMatrix[i][j] + " ");
             }
             System.out.println();
         }
 
         // Find the maximum entry and it's co-ordinates
-        int maxEntry = subMtrix[0][0];
+        int maxEntry = subMatrix[0][0];
         int maxRowIndex = 0;
         int maxColumnIndex = 0;
         for(int i=0; i<row; i++){
             for(int j=0; j<column; j++){
-                if(subMtrix[i][j] > maxEntry) {
-                    maxEntry = subMtrix[i][j];
+                if(subMatrix[i][j] > maxEntry) {
+                    maxEntry = subMatrix[i][j];
                     maxRowIndex = i;
                     maxColumnIndex = j;
                 }
