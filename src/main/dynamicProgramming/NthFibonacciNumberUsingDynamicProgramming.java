@@ -3,13 +3,14 @@ package main.dynamicProgramming;
 /*
     http://www.geeksforgeeks.org/dynamic-programming-set-1/
  */
-public class NthFibonacciNumber {
+public class
+{
 
     static int nthFiboNumber = 40;
     static int[] lookup = new int[100];
 
     public static void main(String[] args){
-        NthFibonacciNumber nthFibonacciNumber = new NthFibonacciNumber();
+        NthFibonacciNumberUsingDynamicProgramming nthFibonacciNumber = new NthFibonacciNumberUsingDynamicProgramming();
         nthFibonacciNumber.initializeLookup();
         System.out.println(nthFibonacciNumber.nthFiboNumber + "th Fibonacci number  :: "+ findNthFiboNumber(nthFibonacciNumber.nthFiboNumber));
 
