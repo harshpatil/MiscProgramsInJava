@@ -1,6 +1,4 @@
-package main.tree;
-
-import main.identicalTrees.Tree;
+package main.tree.binaryTree;
 
 import java.util.LinkedList;
 import java.util.Queue;

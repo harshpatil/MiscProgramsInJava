@@ -1,4 +1,4 @@
-package main.tree;
+package main.tree.binaryTree;
 
 /*
     Size of a tree is the number of elements present in the tree.

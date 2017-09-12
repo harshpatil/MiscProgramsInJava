@@ -1,15 +1,20 @@
-package main.tree;
+package main.tree.binaryTree;
 
 import java.util.LinkedList;
 import java.util.Queue;
-import java.util.Stack;
 
 /*
-    Here print the tree ulta
+    Given a binary tree, print level order traversal in a way that nodes of all
+    levels are printed in separate lines
+
+    http://www.geeksforgeeks.org/print-level-order-traversal-line-line/
+
+    Solution: This is nothing but BFS with node count at each level
 
     Time Complexity: O(n)
+
  */
-public class PrintTreeLineByLineUlta {
+public class PrintTreeLineByLine {
 
     public static void main(String[] args){
 
@@ -21,42 +26,35 @@ public class PrintTreeLineByLineUlta {
         tree.root.left.right = new TreeNode(5);
         tree.root.right.right = new TreeNode(6);
 
-        printNodesUltaLevelWiseBFS(tree.root);
+        printNodesLevelWiseBFS(tree.root);
     }
 
-    private static void printNodesUltaLevelWiseBFS(TreeNode root) {
+    private static void printNodesLevelWiseBFS(TreeNode root) {
 
+        if(root == null){
+            return;
+        }
         Queue<TreeNode> queue = new LinkedList<>();
         queue.add(root);
-        Stack<TreeNode> stack = new Stack<>();
         while (true){
+
             int nodeCount = queue.size();
-            if(nodeCount==0){
+            if(nodeCount == 0){
                 break;
             }
             int i=0;
             while (i<nodeCount){
                 TreeNode temp = queue.poll();
-                stack.add(temp);
-                if(temp.right!=null){
-                    queue.add(temp.right);
-                }
+                System.out.print(temp.data + " ");
                 if(temp.left!=null){
                     queue.add(temp.left);
                 }
-                if(i==nodeCount-1){
-                    stack.add(null);
+                if(temp.right!=null){
+                    queue.add(temp.right);
                 }
                 i++;
             }
-        }
-        while (!stack.isEmpty()){
-            TreeNode temp = stack.pop();
-            if(temp!=null){
-                System.out.print(temp.data + " ");
-            } else {
-                System.out.println();
-            }
+            System.out.println();
         }
     }
 }

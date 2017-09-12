@@ -1,4 +1,4 @@
-package main.tree;
+package main.tree.binaryTree;
 
 /*
     http://www.geeksforgeeks.org/write-a-c-program-to-delete-a-tree/

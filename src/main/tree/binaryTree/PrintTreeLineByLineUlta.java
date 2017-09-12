@@ -1,20 +1,15 @@
-package main.tree;
+package main.tree.binaryTree;
 
 import java.util.LinkedList;
 import java.util.Queue;
+import java.util.Stack;
 
 /*
-    Given a binary tree, print level order traversal in a way that nodes of all
-    levels are printed in separate lines
-
-    http://www.geeksforgeeks.org/print-level-order-traversal-line-line/
-
-    Solution: This is nothing but BFS with node count at each level
+    Here print the tree ulta
 
     Time Complexity: O(n)
-
  */
-public class PrintTreeLineByLine {
+public class PrintTreeLineByLineUlta {
 
     public static void main(String[] args){
 
@@ -26,35 +21,42 @@ public class PrintTreeLineByLine {
         tree.root.left.right = new TreeNode(5);
         tree.root.right.right = new TreeNode(6);
 
-        printNodesLevelWiseBFS(tree.root);
+        printNodesUltaLevelWiseBFS(tree.root);
     }
 
-    private static void printNodesLevelWiseBFS(TreeNode root) {
+    private static void printNodesUltaLevelWiseBFS(TreeNode root) {
 
-        if(root == null){
-            return;
-        }
         Queue<TreeNode> queue = new LinkedList<>();
         queue.add(root);
+        Stack<TreeNode> stack = new Stack<>();
         while (true){
-
             int nodeCount = queue.size();
-            if(nodeCount == 0){
+            if(nodeCount==0){
                 break;
             }
             int i=0;
             while (i<nodeCount){
                 TreeNode temp = queue.poll();
-                System.out.print(temp.data + " ");
-                if(temp.left!=null){
-                    queue.add(temp.left);
-                }
+                stack.add(temp);
                 if(temp.right!=null){
                     queue.add(temp.right);
                 }
+                if(temp.left!=null){
+                    queue.add(temp.left);
+                }
+                if(i==nodeCount-1){
+                    stack.add(null);
+                }
                 i++;
             }
-            System.out.println();
+        }
+        while (!stack.isEmpty()){
+            TreeNode temp = stack.pop();
+            if(temp!=null){
+                System.out.print(temp.data + " ");
+            } else {
+                System.out.println();
+            }
         }
     }
 }

@@ -1,4 +1,4 @@
-package main.tree;
+package main.tree.binaryTree;
 
 /*
     Two trees are identical when they have same data and arrangement of data is also same.

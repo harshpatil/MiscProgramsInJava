@@ -1,4 +1,4 @@
-package main.tree;
+package main.tree.binaryTree;
 
 /*
     Given a binary tree and a number, return true if the tree has a root-to-leaf path
