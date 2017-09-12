@@ -3,8 +3,7 @@ package main.dynamicProgramming;
 /*
     http://www.geeksforgeeks.org/dynamic-programming-set-1/
  */
-public class
-{
+public class NthFibonacciNumberUsingDynamicProgramming {
 
     static int nthFiboNumber = 40;
     static int[] lookup = new int[100];
