@@ -15,8 +15,6 @@ package main.dynamicProgramming;
                 1 1 1
 
         Refer to --> http://www.geeksforgeeks.org/maximum-size-sub-matrix-with-all-1s-in-a-binary-matrix/
-
- * Created by HarshPatil on 9/2/17.
  */
 public class MaximumSizeSquareSubMatrixWithAll1s {
 
