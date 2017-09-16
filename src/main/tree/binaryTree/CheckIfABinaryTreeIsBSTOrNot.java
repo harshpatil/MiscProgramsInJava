@@ -1,5 +1,7 @@
 package main.tree.binaryTree;
 
+import java.util.ArrayList;
+
 /*
     http://www.geeksforgeeks.org/a-program-to-check-if-a-binary-tree-is-bst-or-not/
 
@@ -13,6 +15,7 @@ public class CheckIfABinaryTreeIsBSTOrNot {
 
     static BinaryTree tree = new BinaryTree();
     static TreeNode prev;
+    static ArrayList<Integer> list = new ArrayList<>();
 
     public static void main(String []args){
 
@@ -26,6 +29,30 @@ public class CheckIfABinaryTreeIsBSTOrNot {
             System.out.println("Is a BST");
         } else {
             System.out.println("Is not a BST");
+        }
+
+        isBSTUsingArrayList(tree.root, list);
+        System.out.println("Check if BST using ArrayList");
+        boolean flag = true;
+        for (int i=1; i<list.size(); i++){
+            if(list.get(i-1) > list.get(i)){
+                flag = false;
+            }
+        }
+        if (!flag){
+            System.out.println("Is not a BST");
+        } else {
+            System.out.println("Is a BST");
+        }
+    }
+
+    private static void isBSTUsingArrayList(TreeNode root, ArrayList<Integer> list) {
+        if(root == null){
+            return;
+        } else {
+            isBSTUsingArrayList(root.left, list);
+            list.add(root.data);
+            isBSTUsingArrayList(root.right, list);
         }
     }
 
