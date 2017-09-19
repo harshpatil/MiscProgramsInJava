@@ -1,6 +1,9 @@
 package main.tree.binaryTree;
 
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Random;
 
 /*
     http://www.geeksforgeeks.org/a-program-to-check-if-a-binary-tree-is-bst-or-not/
@@ -16,6 +19,7 @@ public class CheckIfABinaryTreeIsBSTOrNot {
     static BinaryTree tree = new BinaryTree();
     static TreeNode prev;
     static ArrayList<Integer> list = new ArrayList<>();
+
 
     public static void main(String []args){
 
