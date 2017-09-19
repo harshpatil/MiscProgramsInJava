@@ -1,32 +1,41 @@
 package main.array;
 
-/**
- * Created by HarshPatil on 4/2/17.
+/*
+    http://www.geeksforgeeks.org/find-rotation-count-rotated-sorted-array/
  */
 public class FindPivotInSortedRotatedArray {
 
-    static int array[] = {22, 45, 55, 65, 75, 86, 2};
-
     public static void main(String []args){
 
-        int first = 0;
-        int last = array.length-1;
+        int array[] = {86, 2, 22, 45, 55, 65, 75};
+        int count = countRotations(array, 0, array.length-1);
+        System.out.println("Array has been rotated " + count + " times");
+        System.out.println("Pivot is present at position " + count);
+    }
 
-        while (first<=last){
-            int mid = (first+last)/2;
+    private static int countRotations(int arr[], int low, int high) {
 
-            if(array[first] <= array[last]){
-                System.out.println("Array is not rotated");
-                System.exit(0);
-            }
-            else if (array[mid] > array[mid+1] && mid < array.length-1) {
-                System.out.println("Pivot is present at position:" + mid);
-                System.exit(0);
-            } else if (array[first] <= array[mid]) {
-                first = mid + 1;
-            } else {
-                last = mid - 1;
-            }
+        if (high < low){
+            return 0;
         }
+
+        if (high == low){
+            return high;
+        }
+
+        int mid=(low+high)/2;
+        if (mid < high && arr[mid+1] < arr[mid]){
+            return (mid+1);
+        }
+
+        if (mid > low && arr[mid] < arr[mid - 1]){
+            return mid;
+        }
+
+        if (arr[high] > arr[mid]){
+            return countRotations(arr, low, mid-1);
+        }
+
+        return countRotations(arr, mid+1, high);
     }
 }

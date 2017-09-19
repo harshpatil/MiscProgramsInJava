@@ -3,8 +3,8 @@ package main.array;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 
-/**
- * Created by HarshPatil on 4/2/17.
+/*
+    http://www.geeksforgeeks.org/search-an-element-in-a-sorted-and-pivoted-array/
  */
 public class SearchAnElementInSortedRotatedArray {
 
