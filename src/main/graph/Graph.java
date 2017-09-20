@@ -1,5 +1,7 @@
 package main.graph;
 
+import java.util.LinkedList;
+
 /**
  *
  *
@@ -60,4 +62,22 @@ package main.graph;
  * Created by HarshPatil on 3/21/17.
  */
 public class Graph {
+
+    int v;
+    LinkedList<Integer> adjListArray[];
+
+    Graph(int v){
+
+        this.v = v;
+        adjListArray = new LinkedList[v];
+        for(int i=0; i<v; i++){
+            adjListArray[i] = new LinkedList<>();
+        }
+    }
+
+    public void addEdge(Graph graph, int src, int dest) {
+
+        graph.adjListArray[src].add(dest);
+        graph.adjListArray[dest].add(src);
+    }
 }
