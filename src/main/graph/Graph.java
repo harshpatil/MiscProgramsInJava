@@ -74,10 +74,4 @@ public class Graph {
             adjListArray[i] = new LinkedList<>();
         }
     }
-
-    public void addEdge(Graph graph, int src, int dest) {
-
-        graph.adjListArray[src].add(dest);
-        graph.adjListArray[dest].add(src);
-    }
 }

@@ -33,16 +33,22 @@ public class AdjacencyListRepresentationOfGraph {
 
         int vertices = 5;
         Graph graph = new Graph(vertices);
-        graph.addEdge(graph, 0, 1);
-        graph.addEdge(graph, 0, 4);
-        graph.addEdge(graph, 4, 3);
-        graph.addEdge(graph, 4, 1);
-        graph.addEdge(graph, 1, 3);
-        graph.addEdge(graph, 1, 2);
-        graph.addEdge(graph, 3, 2);
+        addEdge(graph, 0, 1);
+        addEdge(graph, 0, 4);
+        addEdge(graph, 4, 3);
+        addEdge(graph, 4, 1);
+        addEdge(graph, 1, 3);
+        addEdge(graph, 1, 2);
+        addEdge(graph, 3, 2);
 
         System.out.println("Printing Graph's adjacency List");
         printGraph(graph);
+    }
+
+    public static void addEdge(Graph graph, int src, int dest) {
+
+        graph.adjListArray[src].add(dest);
+        graph.adjListArray[dest].add(src);
     }
 
     private static void printGraph(Graph graph) {
@@ -55,6 +61,5 @@ public class AdjacencyListRepresentationOfGraph {
             }
             System.out.println();
         }
-
     }
 }
