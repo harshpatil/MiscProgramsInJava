@@ -1,5 +1,7 @@
 package main.string;
 
+import java.util.regex.Pattern;
+
 /*
 
     Example: Let the input string be “i like this program very much”.
@@ -12,6 +14,7 @@ package main.string;
     Output : s = "practice of lot a needs coding at good getting"
 
     http://www.geeksforgeeks.org/reverse-words-in-a-given-string/
+    
  */
 public class ReverseWordsInAGivenString {
 
@@ -23,6 +26,14 @@ public class ReverseWordsInAGivenString {
 
     private static void reverseAndPrint(String inputString) {
 
+        Pattern pattern = Pattern.compile(" ");
+        String[] temp = pattern.split(inputString);
+        String result = "";
 
+        for(int i=temp.length-1; i>-1; i--){
+            result = result + temp[i] + " ";
+        }
+
+        System.out.println("Reverse of ::: \n" + inputString + "\n" + result);
     }
 }
