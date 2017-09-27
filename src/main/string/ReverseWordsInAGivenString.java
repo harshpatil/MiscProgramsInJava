@@ -26,8 +26,10 @@ public class ReverseWordsInAGivenString {
 
     private static void reverseAndPrint(String inputString) {
 
-        Pattern pattern = Pattern.compile(" ");
-        String[] temp = pattern.split(inputString);
+//        Pattern pattern = Pattern.compile(" ");
+//        String[] temp = pattern.split(inputString);
+        // use above one or
+        String[] temp = inputString.split(" ");
         String result = "";
 
         for(int i=temp.length-1; i>-1; i--){
