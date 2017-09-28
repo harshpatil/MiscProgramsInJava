@@ -25,7 +25,7 @@ import java.util.Map;
 public class RemoveRecurringDigitsInAGivenNumber {
 
     public static void main(String[] args){
-
+        
         String input = "1299888833";
         System.out.print("Input String :: " + input);
         removeRecurringDigit(input.toCharArray());
