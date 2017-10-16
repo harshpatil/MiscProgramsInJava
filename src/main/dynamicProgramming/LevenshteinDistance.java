@@ -2,6 +2,10 @@ package main.dynamicProgramming;
 
 /*
     http://www.geeksforgeeks.org/dynamic-programming-set-5-edit-distance/
+
+    Time Complexity: O(m x n)
+    Auxiliary Space: O(m x n)
+
  */
 public class LevenshteinDistance {
 
@@ -16,6 +20,7 @@ public class LevenshteinDistance {
     private static int findEditDistance(String str1, String str2, int str1length, int str2length) {
 
         int[][] subMatrix = new int[str1length+1][str2length+1];
+
         for (int i=0; i<subMatrix.length; i++){
             for (int j=0; j<subMatrix[0].length; j++){
 
