@@ -21,18 +21,34 @@ public class MinCostPath {
                         {4, 8, 2},
                         {1, 5, 3}};
 
-        System.out.println("Minimum cost to reach (2,2) is " + findMinCost(cost, 2,2));
+        // he path with minimum cost is highlighted in the following figure.
+        // The path is (0, 0) –> (0, 1) –> (1, 2) –> (2, 2). The cost of the path is 8 (1 + 2 + 2 + 3).
+
+        System.out.println("Minimum cost to reach (2,2) is " + findMinCost(cost, 2,1));
     }
 
     private static int findMinCost(int[][] cost, int rowIndex, int columnIndex) {
 
-        int totalCost = cost[0][0];
+        int subMatrix[][]=new int[rowIndex+1][columnIndex+1];
+        subMatrix[0][0] = cost[0][0];
 
-        for(int i=0; i<rowIndex; i++){
-            for(int j=0; j<columnIndex; j++){
-                totalCost = totalCost + Math.min(cost[i+1][j], Math.min(cost[i][j+1], cost[i+1][j+1]));
+        /* Initialize first column of total cost(tc) array */
+        for (int i = 1; i <= rowIndex; i++){
+            subMatrix[i][0] = subMatrix[i-1][0] + cost[i][0];
+        }
+
+
+        /* Initialize first row of tc array */
+        for (int j = 1; j <= columnIndex; j++){
+            subMatrix[0][j] = subMatrix[0][j-1] + cost[0][j];
+        }
+
+        /* Construct rest of the tc array */
+        for(int i=1; i<=rowIndex; i++){
+            for(int j=1; j<=columnIndex; j++){
+                subMatrix[i][j] = cost[i][j] + Math.min(subMatrix[i-1][j-1], Math.min(subMatrix[i-1][j], subMatrix[i][j-1]));
             }
         }
-        return totalCost;
+        return subMatrix[rowIndex][columnIndex];
     }
 }
