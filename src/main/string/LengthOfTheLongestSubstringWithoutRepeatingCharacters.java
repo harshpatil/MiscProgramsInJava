@@ -12,6 +12,9 @@ package main.string;
 
     For “GEEKSFORGEEKS”, there are two longest substrings with length 7.
 
+    Time Complexity : O(n)
+    Spacr Complexity : O(n)
+
  */
 public class LengthOfTheLongestSubstringWithoutRepeatingCharacters {
 
