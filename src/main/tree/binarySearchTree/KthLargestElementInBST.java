@@ -1,12 +1,13 @@
 package main.tree.binarySearchTree;
 
-import main.array.BinarySearch;
-
 /*
     http://www.geeksforgeeks.org/kth-largest-element-in-bst-when-modification-to-bst-is-not-allowed/
 
     Given a Binary Search Tree (BST) and a positive integer k,
     find the k’th largest element in the Binary Search Tree.
+
+    Find Second largest element (http://www.geeksforgeeks.org/second-largest-element-in-binary-search-tree-bst/)
+    is a variant of this one.
 
  */
 public class KthLargestElementInBST {
