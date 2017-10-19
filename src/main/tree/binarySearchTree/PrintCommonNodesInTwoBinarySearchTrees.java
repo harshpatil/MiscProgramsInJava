@@ -68,7 +68,6 @@ public class PrintCommonNodesInTwoBinarySearchTrees {
         }
     }
 
-
     private static BSTNode insertNode(BSTNode root, int key) {
 
         if(root == null){
