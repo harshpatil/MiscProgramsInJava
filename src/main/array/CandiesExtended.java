@@ -2,6 +2,9 @@ package main.array;
 
 /*
     2 students can have same score
+
+    Time Complexity: O(n)
+    Space : O(n)
  */
 public class CandiesExtended {
 

@@ -10,6 +10,8 @@ package main.array;
     must get more candies. Alice wants to save money, so she needs to minimize the total number
     of candies given to the children.
 
+    Time Complexity: O(n)
+    Space : O(n)
  */
 public class Candies {
 
