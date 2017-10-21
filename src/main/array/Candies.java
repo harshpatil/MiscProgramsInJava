@@ -31,17 +31,13 @@ public class Candies {
             }
         }
 
+        int sum = result[result.length-1];
         for(int i=array.length-2; i>=0; i--){
             if(array[i]>array[i+1]){
                 result[i] = result[i+1] + 1;
             }
-        }
-
-        int sum = 0;
-        for (int i=0; i<result.length; i++){
             sum = sum + result[i];
         }
-
         return sum;
     }
 }
