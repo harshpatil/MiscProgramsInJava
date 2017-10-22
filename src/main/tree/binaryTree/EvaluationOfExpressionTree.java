@@ -6,6 +6,7 @@ package main.tree.binaryTree;
     Given a simple expression tree, consisting of basic binary operators
     i.e., + , – ,* and / and some integers, evaluate the expression tree.
 
+    Time Complexity: O(n)
  */
 public class EvaluationOfExpressionTree {
 
