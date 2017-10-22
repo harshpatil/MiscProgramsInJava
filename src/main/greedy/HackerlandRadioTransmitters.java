@@ -21,11 +21,11 @@ public class HackerlandRadioTransmitters {
 
     public static void main(String[] args){
 
-        int[] houseIndex = {7, 2, 4, 6, 5, 9, 12, 11};
-        int coverage = 2;
+//        int[] houseIndex = {7, 2, 4, 6, 5, 9, 12, 11};
+//        int coverage = 2;
 
-//        int[] houseIndex = {1,2,3,4,5};
-//        int coverage = 1;
+        int[] houseIndex = {1,2,3,4,5};
+        int coverage = 2;
 
         System.out.print("\nNumber of Transmitters needed = "+ findNumberOfTransmittersNeeded(houseIndex, coverage));
     }
@@ -49,8 +49,7 @@ public class HackerlandRadioTransmitters {
             i--;
             System.out.println("Place Transmitter on house :: " + houseIndex[i]);
 
-
-            //now go to the right of houseIndex[i] by k
+            // now go to the right of houseIndex[i] by k
             // because transmitter at houseIndex[i] covers houses to its right as well.
             location = houseIndex[i] + coverage;
             while(i<houseIndex.length && houseIndex[i]<=location){
