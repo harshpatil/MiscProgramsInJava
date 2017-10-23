@@ -1,11 +1,7 @@
 package main.array;
 
-import java.io.BufferedReader;
-import java.io.InputStreamReader;
-import java.util.Arrays;
-
-/**
- * Created by HarshPatil on 3/31/17.
+/*
+    Standard interview question
  */
 public class TwoIntegersWhoseSumIsEqualToInput {
 
@@ -26,12 +22,7 @@ public class TwoIntegersWhoseSumIsEqualToInput {
 
     public static void main(String []args) throws Exception {
 
-        System.out.println("Enter an integer");
-        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
-        String input = bufferedReader.readLine();
-        int inputSum = Integer.parseInt(input);
-
-        Arrays.sort(array);
+        int inputSum = 11;
 
         int i=0;
         int j=array.length-1;
