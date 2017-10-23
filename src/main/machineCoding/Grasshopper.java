@@ -2,10 +2,9 @@ package main.machineCoding;
 
 import java.util.Arrays;
 
-/**
- * Created by HarshPatil on 3/22/17.
+/*
+    Braviant coding test
  */
-
 public class Grasshopper {
 
     boolean visited[];

@@ -8,6 +8,7 @@ public class RightRotation {
     public static void main(String[] args){
 
         int inputArray[] = {1, 2, 3, 4, 5};
+
         int rotateByPositions = 3;
         int resultArray[] = new int[inputArray.length];
 

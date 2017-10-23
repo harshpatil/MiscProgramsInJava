@@ -10,14 +10,13 @@ import java.util.LinkedHashMap;
  * 2) Each grid(3*3) should not have duplicate values
  * 3) Number should be between 1 and 9
  *
- * Created by HarshPatil on 3/26/17.
+ * Uber coding test
  */
 public class Sudoku {
 
     public static void main(String []args){
 
         LinkedHashMap<Integer, Integer> list = new LinkedHashMap<>();
-
 
         boolean valid;
         int[][] board = {{7,6,9,3,4,2,1,5,8},
