@@ -1,14 +1,16 @@
 package main.array;
 
 /**
- *
- * Write an efficient function that takes stock_prices_yesterday
- * and returns the best profit I could have made
- * from 1 purchase and 1 sale of 1 Apple stock yesterday.
- *
- * Created by HarshPatil on 4/2/17.
+
+      Write an efficient function that takes stock_prices_yesterday
+      and returns the best profit I could have made
+      from 1 purchase and 1 sale of 1 Apple stock yesterday.
+
+    https://www.interviewcake.com/question/java/stock-price
+
+    Time Complexity : O(n)
  */
-public class MaxMinProblem {
+public class StockProfit {
 
     static int array[] = {10, 7, 5, 8, 11, 9, 15};
 //    static int array[] = {10, 8, 6, 4, 3, 2};
