@@ -17,20 +17,23 @@ public class RightRotation {
 
         System.out.println("\nRight rotate by "+ rotateByPositions + " positions");
 
-        int j=0;
-        for(int i=inputArray.length-rotateByPositions; i<inputArray.length; i++){
-            resultArray[j] = inputArray[i];
-            j++;
-        }
+//        int j=0;
+//        for(int i=inputArray.length-rotateByPositions; i<inputArray.length; i++){
+//            resultArray[j] = inputArray[i];
+//            j++;
+//        }
+//
+//        for(int i=0; i<inputArray.length - rotateByPositions; i++){
+//            resultArray[j] = inputArray[i];
+//            j++;
+//        }
 
-        for(int i=0; i<inputArray.length - rotateByPositions; i++){
-            resultArray[j] = inputArray[i];
-            j++;
+        for(int i=0; i<inputArray.length; i++){
+            resultArray[(i+rotateByPositions)%inputArray.length] = inputArray[i];
         }
 
         System.out.print("Result Array :: ");
         printArray(resultArray);
-
     }
 
     private static void printArray(int[] array) {

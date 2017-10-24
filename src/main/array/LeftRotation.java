@@ -29,15 +29,19 @@ public class LeftRotation {
 
         System.out.println("\nLeft shift number :: " + leftShiftNumber);
 
-        int j=0;
-        for(int i=leftShiftNumber%inputArray.length; i<inputArray.length; i++){
-            result[j] = inputArray[i];
-            j++;
-        }
+//        int j=0;
+//        for(int i=leftShiftNumber%inputArray.length; i<inputArray.length; i++){
+//            result[j] = inputArray[i];
+//            j++;
+//        }
+//
+//        for(int i=0; i<leftShiftNumber%inputArray.length; i++){
+//            result[j] = inputArray[i];
+//            j++;
+//        }
 
-        for(int i=0; i<leftShiftNumber%inputArray.length; i++){
-            result[j] = inputArray[i];
-            j++;
+        for(int i=0; i<inputArray.length; i++){
+            result[(i-leftShiftNumber+inputArray.length)%inputArray.length] = inputArray[i];
         }
 
         System.out.print("Result Array ::: ");
