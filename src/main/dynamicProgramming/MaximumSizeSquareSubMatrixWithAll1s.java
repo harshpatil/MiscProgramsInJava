@@ -49,7 +49,7 @@ public class MaximumSizeSquareSubMatrixWithAll1s {
         for (int i=1; i<row; i++){
             for(int j=1; j<column; j++){
                 if(inputMatrix[i][j] == 1){
-                    subMatrix[i][j] = Math.min(subMatrix[i-1][j], Math.min(subMatrix[i-1][j-1], subMatrix[i][j-1])) + 1;
+                    subMatrix[i][j] = 1 + Math.min(subMatrix[i-1][j], Math.min(subMatrix[i-1][j-1], subMatrix[i][j-1]));
                 } else {
                     subMatrix[i][j] = 0;
                 }

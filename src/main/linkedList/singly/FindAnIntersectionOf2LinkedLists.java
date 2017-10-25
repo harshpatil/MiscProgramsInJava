@@ -37,6 +37,7 @@ public class FindAnIntersectionOf2LinkedLists {
 
     private static void findIntersectingNodeUsingHashSet(SinglyLinkedList sll1, SinglyLinkedList sll2) {
 
+        // This will work only if all the elements int the list are unique
         Set<Integer> hashSet = new HashSet<>();
         SinglyLinkedListNode current = sll1.head;
         while (current.next != null){

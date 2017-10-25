@@ -1,8 +1,6 @@
 package main.linkedList.singly;
 
-/**
- * Created by HarshPatil on 9/6/17.
- */
+
 public class CreateSinglyLinkedList {
 
     public static void main(String []args){

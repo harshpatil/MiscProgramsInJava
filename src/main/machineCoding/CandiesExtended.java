@@ -1,6 +1,8 @@
-package main.array;
+package main.machineCoding;
 
 /*
+
+    Refdash telephonic
     2 students can have same score
 
     Time Complexity: O(n)
