@@ -2,6 +2,7 @@ package main.dynamicProgramming;
 
 /*
     https://www.hackerrank.com/challenges/coin-change/problem
+    https://www.interviewcake.com/question/java/coin
 
     You have m types of coins available in infinite quantities where the value of each coin
     is given in the array C = {C0, C1, C2 ... Cm-1}. Can you determine the number of ways of
@@ -18,8 +19,8 @@ public class CoinChangeProblem {
 
     public static void main(String[] args){
 
-        int[] inputArray = {8, 3, 1, 2};
-        int n = 3;
+        int[] inputArray = {1, 2, 3};
+        int n = 4;
         System.out.println("Number of ways to get change for " + n + " is " + findWays(inputArray, n));
     }
 

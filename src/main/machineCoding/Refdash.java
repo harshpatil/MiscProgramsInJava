@@ -1,4 +1,4 @@
-package main.graph;
+package main.machineCoding;
 
 import java.util.LinkedList;
 import java.util.Queue;
