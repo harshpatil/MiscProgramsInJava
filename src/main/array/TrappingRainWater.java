@@ -1,4 +1,4 @@
-package main.stack;
+package main.array;
 
 /*
     Given n non-negative integers representing an elevation map where the width of
