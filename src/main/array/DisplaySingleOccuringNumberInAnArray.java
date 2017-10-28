@@ -24,14 +24,10 @@ public class DisplaySingleOccuringNumberInAnArray {
                 map.put(array[i], 1);
             }
         }
-        Iterator iterator = map.entrySet().iterator();
-        System.out.print("{");
-        while (iterator.hasNext()){
-            Map.Entry pair = (Map.Entry)iterator.next();
-            if((int)pair.getValue() <= 1){
-                System.out.print(pair.getKey() + " ");
+        for(Map.Entry<Integer, Integer> entry : map.entrySet()){
+            if(entry.getValue() == 1){
+                System.out.print(entry.getKey() + " ");
             }
         }
-        System.out.print("}");
     }
 }
