@@ -3,25 +3,31 @@ package main.machineCoding;
 import java.util.LinkedList;
 import java.util.Queue;
 
-public class Refdash {
+
+public class RefdashGraphHarsh {
 
 /*
-arr = [1, 3, 2, 0, 4, 2, 1]
+    In a given array and start index, check if you can reach the index which has value 0.
+    If yes, return true
+        else return false
+    You can move left/right the number of positions mentioned in the array index
 
-startIndex = 6 => true
+    arr = [1, 3, 2, 0, 4, 2, 1]
 
-2 -> 0 -> 1 -> 4 -> 0
-  -> 4 -> 0 -> 1 -> 4
+    startIndex = 6 => true
 
-6 -> 5 -> 3 (0)
+    2 -> 0 -> 1 -> 4 -> 0
+      -> 4 -> 0 -> 1 -> 4
 
-info@refdash.com
+    6 -> 5 -> 3 (0)
+
+    info@refdash.com
 */
 
     public static void main(String[]  args){
 
         int[] input = {1, 3, 2, 0, 4, 2, 1};
-        int startingIndex = 2;
+        int startingIndex = 6;
         System.out.println("Path from index "+ startingIndex +" to index with value 0 exists? " + checkPath(input, startingIndex));
     }
 
@@ -33,7 +39,6 @@ info@refdash.com
 
         Queue<Integer> queue = new LinkedList<>();
         boolean visited[] = new boolean[input.length];
-        visited[startingIndex] = true;
         queue.add(startingIndex);
 
         while(!queue.isEmpty()){
@@ -45,16 +50,12 @@ info@refdash.com
             }
 
             int leftJump = current-input[current];
-            if(leftJump >= 0){
-                if(visited[leftJump] == false){
-                    queue.add(current-input[current]);
-                }
+            if(leftJump >= 0 && !visited[leftJump]){
+                queue.add(leftJump);
             }
             int rightJump = current+input[current];
-            if(rightJump < input.length){
-                if(visited[rightJump] == false){
-                    queue.add(current+input[current]);
-                }
+            if(rightJump < input.length && !visited[rightJump]){
+                queue.add(rightJump);
             }
         }
         return false;
