@@ -21,11 +21,11 @@ public class HackerlandRadioTransmitters {
 
     public static void main(String[] args){
 
-//        int[] houseIndex = {7, 2, 4, 6, 5, 9, 12, 11};
-//        int coverage = 2;
-
-        int[] houseIndex = {1,2,3,4,5};
+        int[] houseIndex = {7, 2, 4, 6, 5, 9, 12, 11};
         int coverage = 2;
+
+//        int[] houseIndex = {1,2,3,4,5};
+//        int coverage = 2;
 
         System.out.print("\nNumber of Transmitters needed = "+ findNumberOfTransmittersNeeded(houseIndex, coverage));
     }

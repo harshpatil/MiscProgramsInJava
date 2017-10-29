@@ -31,7 +31,7 @@ public class FindAnIntersectionOf2LinkedLists {
         printElementsOfLinkedList(sll2);
 
         findIntersectingNodeUsingHashSet(sll1, sll2);
-        findIntersectingNodeUsingWithoutUsingHashSet(sll1, sll2);
+        findIntersectingNodeWithoutUsingHashSet(sll1, sll2);
 
     }
 
@@ -55,7 +55,7 @@ public class FindAnIntersectionOf2LinkedLists {
         }
     }
 
-    private static void findIntersectingNodeUsingWithoutUsingHashSet(SinglyLinkedList sll1, SinglyLinkedList sll2) {
+    private static void findIntersectingNodeWithoutUsingHashSet(SinglyLinkedList sll1, SinglyLinkedList sll2) {
 
         int lengthOfList1 = 0;
         int lengthOfList2 = 0;
