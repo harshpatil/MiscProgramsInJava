@@ -1,11 +1,10 @@
 package main.array;
 
+import java.util.Arrays;
+
 /*
     Standard interview question
- */
-public class TwoIntegersWhoseSumIsEqualToInput {
 
-    /*
     Logic : 1) Sort the given Array
             2) start 2 pointers one from each end
             3) Add first and last element, if sum is equal to input number, print
@@ -16,14 +15,16 @@ public class TwoIntegersWhoseSumIsEqualToInput {
 
            Time complexity : O(n) if Array is sorted
                              O(n*Logn) if Array is not sorted
-    */
+
+ */
+public class TwoIntegersWhoseSumIsEqualToInput {
 
     static int array[] = {2, 5, 6, 8, 9, 10, 1, 7};
 
     public static void main(String []args) throws Exception {
 
         int inputSum = 11;
-
+        Arrays.sort(array);
         int i=0;
         int j=array.length-1;
         while(i<=j){

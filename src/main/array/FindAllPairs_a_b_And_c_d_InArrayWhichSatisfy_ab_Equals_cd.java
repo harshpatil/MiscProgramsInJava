@@ -5,8 +5,10 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-/**
- * Created by HarshPatil on 4/14/17.
+/*
+    http://www.geeksforgeeks.org/find-pairs-ab-cd-array-satisfy-ab-cd/
+
+    Same as : http://www.geeksforgeeks.org/find-four-elements-a-b-c-and-d-in-an-array-such-that-ab-cd/
  */
 public class FindAllPairs_a_b_And_c_d_InArrayWhichSatisfy_ab_Equals_cd {
 

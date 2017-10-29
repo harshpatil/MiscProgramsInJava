@@ -1,15 +1,15 @@
 package main.array;
 
-/**
- * Created by HarshPatil on 4/10/17.
- */
-public class SplitAnArrayIntoTwoEqualSumSubarrays {
-
-    /*
+/*
     constraint: Order of elements should not be changed
         Logic : 1) Calculate totalSum. if totalSum is odd splitting is not possible
                 2) Traverse from right, calculate rightSum & leftSum (rightSum-totalSum)
-                3) If leftSum == rightSum, array can be split, print elements of both arrays */
+                3) If leftSum == rightSum, array can be split, print elements of both arrays
+
+    Time complexity : O(n)
+
+ */
+public class SplitAnArrayIntoTwoEqualSumSubarrays {
 
     static int array[] = { 1 , 2 , 3 , 4 , 5 , 5 };
 //    static int array[] = {5,1,3,2,5};

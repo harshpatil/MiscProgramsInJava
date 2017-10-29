@@ -11,6 +11,10 @@ package main.array;
     if the input array is [-1, 2, -3, 4, 5, 6, -7, 8, 9],
     then the output should be [9, -7, 8, -3, 5, -1, 2, 4, 6]
 
+    Time Complexity: O(n) where n is number of elements in given array.
+    Auxiliary Space: O(1)
+
+
     http://www.geeksforgeeks.org/rearrange-positive-and-negative-numbers-publish/
  */
 public class RearrangePositiveAndNegativeNumbersAtEvenAndOddIndexOfArrayInLinearTime {
@@ -26,8 +30,15 @@ public class RearrangePositiveAndNegativeNumbersAtEvenAndOddIndexOfArrayInLinear
         printArray(inputArray);
     }
 
+
+    // The main function that rearranges elements of given
+    // array.  It puts positive elements at even indexes (0,
+    // 2, ..) and negative numbers at odd indexes (1, 3, ..)
     private static void rearrangePositiveNegativeToEvenOddIndexRespectively(int[] inputArray) {
 
+        // The following few lines are similar to partition
+        // process of QuickSort.  The idea is to consider 0
+        // as pivot and divide the array around it.
         int i=-1;
         int temp=0;
         for(int j=0; j<inputArray.length; j++){
@@ -39,9 +50,14 @@ public class RearrangePositiveAndNegativeNumbersAtEvenAndOddIndexOfArrayInLinear
             }
         }
 
+        // Now all positive numbers are at end and negative numbers at
+        // the beginning of array. Initialize indexes for starting point
+        // of positive and negative numbers to be swapped
         int evenIndex = 0;
         int positiveIndex = i+1;
 
+        // Increment the negative index by 2 and positive index by 1, i.e.,
+        // swap every alternate negative number with next positive number
         while (positiveIndex < inputArray.length && evenIndex < positiveIndex && inputArray[evenIndex] < 0){
 
             temp = inputArray[evenIndex];
