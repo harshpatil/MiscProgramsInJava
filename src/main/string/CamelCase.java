@@ -3,6 +3,8 @@ package main.string;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 
+import static java.lang.Character.isUpperCase;
+
 /**
  * Alice wrote a sequence of words in CamelCase as a string of letters, , having the following properties:
  * It is a concatenation of one or more words consisting of English letters.
@@ -33,21 +35,11 @@ public class CamelCase {
 
     public static void main(String []args) throws Exception {
 
-        System.out.println("Enter input String ::: ");
-        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
-        String input = bufferedReader.readLine();
-
-        if(input.length()<1 || input.length()>100000){
-
-            System.out.println("Length of input string should be between 1 to 100");
-            System.exit(0);
-        }
+        String input = "saveChangesInTheEditor";
 
         int count = 1;
         for(int i=0; i<input.length(); i++){
-
-            Character character = input.charAt(i);
-            if(character.isUpperCase(character)){
+            if(isUpperCase(input.charAt(i))){
                 count++;
             }
         }

@@ -3,22 +3,61 @@ package main.string;
 import java.util.HashMap;
 import java.util.Map;
 
-/**
+/*
 
     http://www.geeksforgeeks.org/check-given-string-rotation-palindrome/
 
     Given a string, check if it is a rotation of a palindrome.
     Example your function should return true for “aab” as it is a rotation of “aba”.
 
- * Created by HarshPatil on 9/3/17.
+    Time Complexity : O(n*n)
+
  */
 public class CheckIfAGivenStringIsARotationOfAPalindrome {
 
     public static void main(String[] args){
-//        String inputString = "baaaabbb";  // Does not work for this input
-        String inputString = "aabccb";
-        checkForRotationOfAPalindrome(inputString);
+        String inputString = "baaaabbb";
+//        String inputString = "aabccb";
+        System.out.println(inputString + "is a rotated palindrome? " + isRotationOfPalindrome(inputString));
+//        checkForRotationOfAPalindrome(inputString);
     }
+
+    private static boolean isPalindrome(String str) {
+        // Start from leftmost and rightmost corners of str
+        int low = 0;
+        int high = str.length() - 1;
+
+        // Keep comparing characters while they are same
+        while (low < high){
+            if (str.charAt(low++) != str.charAt(high--)) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    // Function to check if a given string is a rotation of a
+    // palindrome
+    private static boolean isRotationOfPalindrome(String str) {
+
+        // If string itself is palindrome
+        if (isPalindrome(str)) {
+            return true;
+        }
+
+        // Now try all rotations one by one
+        for (int i = 0; i < str.length()-1; i++) {
+            String str1 = str.substring(0, i+1);
+            String str2 = str.substring(i+1);
+
+            // Check if this rotation is palindrome
+            if (isPalindrome(str2 + str1)) {
+                return true;
+            }
+        }
+        return false;
+    }
+
 
     private static void checkForRotationOfAPalindrome(String inputString) {
 
