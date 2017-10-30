@@ -1,4 +1,4 @@
-package main.string;
+package main.dynamicProgramming;
 
 import java.util.Arrays;
 
@@ -12,8 +12,7 @@ import java.util.Arrays;
  */
 public class RegularExpressionMatching {
 
-    public static void main(String args[])
-    {
+    public static void main(String args[]) {
         String str = "aa";
         String[] patternArray = {"a", "aa", "a*"};
 
