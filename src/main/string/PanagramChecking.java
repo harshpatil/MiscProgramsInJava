@@ -7,8 +7,8 @@ import java.util.Set;
 
     http://www.geeksforgeeks.org/pangram-checking/
 
-    Given a string check if it is Pangram or not.
-    A pangram is a sentence containing every letter in the English Alphabet.
+    Given a string check if it is Panagram or not.
+    A panagram is a sentence containing every letter in the English Alphabet.
 
     Examples :
     The quick brown fox jumps over the lazy dog ” is a Pangram [Contains all the characters from ‘a’ to ‘z’]
@@ -16,7 +16,7 @@ import java.util.Set;
 
  * Created by HarshPatil on 9/3/17.
  */
-public class PangramChecking {
+public class PanagramChecking {
 
     public static void main(String[] args){
 

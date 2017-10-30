@@ -29,11 +29,9 @@ public class GivenAStringFindItsFirstNonRepeatingCharacter {
             }
         }
 
-        Iterator iterator = map.entrySet().iterator();
-        while (iterator.hasNext()){
-            Map.Entry pair = (Map.Entry)iterator.next();
-            if((int)pair.getValue() == 1){
-                System.out.println("First non repeating character is :: "+ pair.getKey());
+        for(Map.Entry<Character, Integer> entry : map.entrySet()){
+            if(entry.getValue() == 1){
+                System.out.println("First non repeating character is :: "+ entry.getKey());
                 System.exit(0);
             }
         }
