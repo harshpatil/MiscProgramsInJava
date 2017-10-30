@@ -18,12 +18,8 @@ public class ReverseAStringUsingStack {
         }
 
         System.out.print("\nReversed String :: ");
-        for(int i=0; i<input.length(); i++){
-            if(stack.size()!=0){
-                System.out.print(stack.pop());
-            } else {
-                System.exit(0);
-            }
+        while (!stack.isEmpty()){
+            System.out.print(stack.pop());
         }
     }
 }
