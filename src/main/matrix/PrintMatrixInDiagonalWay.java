@@ -49,7 +49,7 @@ public class PrintMatrixInDiagonalWay {
             int i=k-1; // set row index for next point in diagonal
             int j=1; // set column index for next point in diagonal
 
-            while(isValid(i, j, row, column)){
+            while(!isValid(i, j, row, column)){
                 System.out.print(inputMatrix[i][j] + " ");
                 i--;
                 j++;
@@ -64,7 +64,7 @@ public class PrintMatrixInDiagonalWay {
             int j = k + 1; // set column index for next point in diagonal
 
             /* Print Diagonally upward */
-            while (isValid(i, j, row, column)) {
+            while (!isValid(i, j, row, column)) {
                 System.out.print(inputMatrix[i][j] + " ");
                 i--;
                 j++;
@@ -74,6 +74,6 @@ public class PrintMatrixInDiagonalWay {
     }
 
     private static boolean isValid(int i, int j, int row, int column) {
-        return (!(i>=row || i<0 || j<0 || j>=column));
+        return (i>=row || i<0 || j<0 || j>=column);
     }
 }

@@ -41,13 +41,16 @@ public class SnakeAndLadderGame {
 
         int currentPosition = startPosition;
         System.out.println("Current Position ::::" + currentPosition);
-        while(currentPosition != finalPosition){
+        while(currentPosition < finalPosition){
 
             Random random = new Random();
+
             int rollDice = random.nextInt(6)+1;
             System.out.println("Roll Dice ::::" + rollDice);
+
             currentPosition = currentPosition + rollDice;
             System.out.println("Current Position ::::" + currentPosition);
+
             if(snakeMap.containsKey(currentPosition)){
                 System.out.println("Snake Found :::: Head of Snake :: " + currentPosition + " & Tail :: " + snakeMap.get(currentPosition));
                 currentPosition = snakeMap.get(currentPosition);
@@ -56,11 +59,8 @@ public class SnakeAndLadderGame {
                 System.out.println("Ladder Found :::: Head of ladder :: " + currentPosition + " & Tail :: " + ladderMap.get(currentPosition));
                 currentPosition = ladderMap.get(currentPosition);
             }
-            if(currentPosition >= finalPosition){
-                System.out.println("Atta Boy !!! You are at the destination !!!!");
-                System.exit(0);
-            }
             Thread.sleep(1000);
         }
+        System.out.println("Atta Boy !!! You are at the destination !!!!");
     }
 }
