@@ -49,10 +49,11 @@ public class ValidateParenthesis {
                 }
             }
         }
-        if(stack.empty() == true){
-            System.out.println("Correct expression");
+
+        if(stack.empty()){
+            System.out.println(input + " is a valid expression");
         } else {
-            System.out.println("Incorrect expression");
+            System.out.println(input + " is a invalid expression");
         }
 
     }
