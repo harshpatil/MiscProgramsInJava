@@ -5,6 +5,8 @@ package main.tree.binaryTree;
     such that adding up all the values along the path equals the given number.
     Return false if no such path can be found.
 
+    This is same as DFS
+
     http://www.geeksforgeeks.org/root-to-leaf-path-sum-equal-to-a-given-number/
  */
 public class GivenABinaryTreeAndANumberReturnTrueIfTheTreeHasRootToLeafPath {

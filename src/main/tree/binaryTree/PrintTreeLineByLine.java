@@ -36,7 +36,7 @@ public class PrintTreeLineByLine {
         }
         Queue<TreeNode> queue = new LinkedList<>();
         queue.add(root);
-        while (true){
+        while (!queue.isEmpty()){
 
             int nodeCount = queue.size();
             if(nodeCount == 0){

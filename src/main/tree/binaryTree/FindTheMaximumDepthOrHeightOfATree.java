@@ -21,13 +21,12 @@ public class FindTheMaximumDepthOrHeightOfATree {
 
     private static int findOutHeightOfTree(TreeNode root) {
 
-        TreeNode temp = root;
-        if (temp == null){
+        if (root == null){
             return 0;
         }
 
-        int leftHeight = findOutHeightOfTree(temp.left);
-        int rightHeight = findOutHeightOfTree(temp.right);
+        int leftHeight = findOutHeightOfTree(root.left);
+        int rightHeight = findOutHeightOfTree(root.right);
 
         if(leftHeight > rightHeight){
             return (leftHeight+1);
