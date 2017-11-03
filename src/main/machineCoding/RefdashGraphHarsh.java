@@ -3,9 +3,6 @@ package main.machineCoding;
 import java.util.LinkedList;
 import java.util.Queue;
 
-
-public class RefdashGraphHarsh {
-
 /*
     In a given array and start index, check if you can reach the index which has value 0.
     If yes, return true
@@ -23,6 +20,8 @@ public class RefdashGraphHarsh {
 
     info@refdash.com
 */
+
+public class RefdashGraphHarsh {
 
     public static void main(String[]  args){
 
