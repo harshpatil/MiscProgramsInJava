@@ -7,7 +7,7 @@ import java.util.Scanner;
 
     https://www.hackerrank.com/challenges/circular-array-rotation
  */
-public class RightRotationMZ {
+public class RightRotation {
 
     public static void main(String[] args){
 

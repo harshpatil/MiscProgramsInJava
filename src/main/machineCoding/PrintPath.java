@@ -3,7 +3,7 @@ package main.machineCoding;
 import java.util.ArrayList;
 import java.util.List;
 
-public class PandoraPrintPath {
+public class PrintPath {
 
     private static class Node {
 
@@ -26,7 +26,7 @@ public class PandoraPrintPath {
 
     public static void main(String[] args) {
 
-        PandoraPrintPath interview = new PandoraPrintPath();
+        PrintPath interview = new PrintPath();
 
         List<Node> children2 = new ArrayList<Node>();
         children2.add(new Node("Dog", new ArrayList<Node>()));

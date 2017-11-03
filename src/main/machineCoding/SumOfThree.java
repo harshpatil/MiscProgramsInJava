@@ -6,8 +6,6 @@ import java.util.HashSet;
 import java.util.Set;
 
 /*
-    Braviant Coding Test
-
     In a given array of elements, search for 3 consecutive integers whose sum is equal
     to given number.
  */

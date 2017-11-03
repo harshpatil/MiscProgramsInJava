@@ -17,11 +17,9 @@ import java.util.Queue;
       -> 4 -> 0 -> 1 -> 4
 
     6 -> 5 -> 3 (0)
-
-    info@refdash.com
 */
 
-public class RefdashGraphHarsh {
+public class GraphHarsh {
 
     public static void main(String[]  args){
 

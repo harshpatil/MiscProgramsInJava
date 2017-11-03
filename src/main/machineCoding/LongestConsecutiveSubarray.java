@@ -4,7 +4,7 @@ import java.util.*;
 import java.io.*;
 import java.util.stream.Collectors;
 
-public class MZLongestConsecutiveSubarry {
+public class LongestConsecutiveSubarray {
 
     public static void main(String args[]) throws Exception {
 

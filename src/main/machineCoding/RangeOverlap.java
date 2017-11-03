@@ -1,7 +1,7 @@
 package main.machineCoding;
 
 /*
-    MZ Coding Test
+
  */
 public class RangeOverlap {
 

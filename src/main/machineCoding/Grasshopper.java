@@ -3,7 +3,7 @@ package main.machineCoding;
 import java.util.Arrays;
 
 /*
-    Braviant coding test
+
  */
 public class Grasshopper {
 

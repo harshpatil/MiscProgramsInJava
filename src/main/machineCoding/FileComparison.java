@@ -28,7 +28,7 @@ package main.machineCoding;
     the output
 
  */
-public class DropboxFileComparison {
+public class FileComparison {
 
     // Assumptions
     // ArrayList<String> fileList(String path); This return list of files/folders under given path

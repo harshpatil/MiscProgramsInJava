@@ -1,7 +1,7 @@
 package main.machineCoding;
 
 /*
-    Braviant Coding test
+
  */
 public class Path {
 

@@ -3,7 +3,6 @@ package main.machineCoding;
 import java.util.Arrays;
 
 /*
-    MZ coding test
 
     https://www.hackerrank.com/challenges/maximum-perimeter-triangle/problem
 

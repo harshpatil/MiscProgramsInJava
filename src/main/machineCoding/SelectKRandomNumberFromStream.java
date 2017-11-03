@@ -5,8 +5,6 @@ import java.util.Random;
 
 /*
     http://www.geeksforgeeks.org/select-a-random-number-from-stream-with-o1-space/
-
-    Refdash
  */
 public class SelectKRandomNumberFromStream {
 

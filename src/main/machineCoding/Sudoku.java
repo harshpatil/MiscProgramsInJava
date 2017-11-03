@@ -10,7 +10,6 @@ import java.util.LinkedHashMap;
  * 2) Each grid(3*3) should not have duplicate values
  * 3) Number should be between 1 and 9
  *
- * Uber coding test
  */
 public class Sudoku {
 
