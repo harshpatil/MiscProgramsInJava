@@ -5,7 +5,7 @@ package main.tree.binaryTree;
 
     Time Complexity : O(n)
  */
-public class GetLevelOfANodeInABinaryTree g{
+public class GetLevelOfANodeInABinaryTree {
 
     public static void main(String[] args){
 
