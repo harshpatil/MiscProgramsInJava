@@ -33,6 +33,8 @@ import java.util.List;
     node from DLL is also O(1). So both operations, addition of new character and finding first
     non-repeating character take O(1) time.
 
+    Time Complexity: O(n)
+
  */
 public class FindTheFirstNonRepeatingCharacterFromAStreamOfCharacters {
 
