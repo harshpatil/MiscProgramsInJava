@@ -1,7 +1,5 @@
 package main.greedy;
 
-import static sun.swing.MenuItemLayoutHelper.max;
-
 /*
 
     http://www.geeksforgeeks.org/gold-mine-problem/
