@@ -11,42 +11,35 @@ public class PrintBox {
 
     private static void printBox(int width, int height){
 
-        printHorizontalLine(width);
-        System.out.println("");
-
-        for(int i=0; i<width; i++){
-            if(i==0 || i==width-1){
-                System.out.print("|");
-            } else if(i== (width/2)){
-                System.out.print("*");
-            } else{
-                System.out.print(" ");
-            }
-        }
-        System.out.println("");
-
-        for(int j=0; j<height-3; j++){
-            for(int i=0; i<width; i++){
-                if(i==0 || i==width-1){
-                    System.out.print("|");
-                } else{
-                    System.out.print(" ");
-                }
-            }
-            System.out.println("");
-        }
-        printHorizontalLine(width);
-    }
-
-    private static void printHorizontalLine(int width){
+        String firstAndLastRow = "";
+        String secondRow = "";
+        String middleRow = "";
 
         for(int i=0; i<width; i++){
             if(i==0 || i== width-1){
-                System.out.print(" ");
-            } else{
-                System.out.print("-");
+                firstAndLastRow = firstAndLastRow + " ";
+                secondRow = secondRow + "|";
+                middleRow = middleRow + "|";
+            } else if(i==(width/2)){
+                firstAndLastRow = firstAndLastRow + "-";
+                secondRow = secondRow + "*";
+                middleRow = middleRow + " ";
+            } else {
+                firstAndLastRow = firstAndLastRow + "-";
+                secondRow = secondRow + " ";
+                middleRow = middleRow + " ";
             }
         }
+
+        System.out.println(firstAndLastRow);
+        System.out.println(secondRow);
+
+        for(int i=0; i<height-3; i++){
+            System.out.println(middleRow);
+        }
+
+        System.out.println(firstAndLastRow);
+
     }
 }
 
