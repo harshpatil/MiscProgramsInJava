@@ -4,7 +4,7 @@ public class PrintBox {
 
     public static void main (String[] args) throws Exception {
 
-        int width = 17;
+        int width = 16;
         int height = 6;
         printBox(width, height);
     }
@@ -35,7 +35,6 @@ public class PrintBox {
             }
             System.out.println("");
         }
-
         printHorizontalLine(width);
     }
 
