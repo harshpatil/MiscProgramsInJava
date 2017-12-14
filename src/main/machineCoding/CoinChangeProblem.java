@@ -1,4 +1,4 @@
-package main.dynamicProgramming;
+package main.machineCoding;
 
 /*
     https://www.hackerrank.com/challenges/coin-change/problem

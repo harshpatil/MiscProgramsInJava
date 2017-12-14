@@ -40,12 +40,15 @@ public class LongestConsecutiveSubarray {
 
         Arrays.sort(input);
 
-        List<Integer> listWithDuplicates = new ArrayList<>();
-        for(int val : input){
-            listWithDuplicates.add(val);
+        Set<Integer> set = new HashSet<>();
+        for(int val : input) {
+            set.add(val);
         }
 
-        List<Integer> result = listWithDuplicates.stream().distinct().collect(Collectors.toList());
+        List<Integer> result = new ArrayList<>();
+        for(int val : set){
+            result.add(val);
+        }
 
         int startIndex = 0;
         int current = 0;

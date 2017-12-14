@@ -15,7 +15,7 @@ public class Path {
 
         Path path = new Path("/a/b/c/d");
         System.out.print("Old PATH :: " + path.path);
-        path.cd("../x");
+        path.cd("../../x");
         System.out.print("\nNew PATH :: " + path.path);
     }
 

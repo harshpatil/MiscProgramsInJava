@@ -18,7 +18,7 @@ public class SelectKRandomNumberFromStream {
     static void selectKItems(int stream[], int n, int k) {
 
         int reservoir[] = new int[k];
-        for (int i = 0; i < k; i++){
+        for(int i=0; i<k; i++){
             reservoir[i] = stream[i];
         }
 
