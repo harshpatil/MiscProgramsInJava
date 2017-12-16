@@ -39,7 +39,7 @@ public class Topfunnel {
     public static void main(String[] args) throws Exception{
 
         List<Element> inputList1 = new ArrayList<>();
-        inputList1.add(new Element('a', 0));
+        inputList1.add(new Element('a', 5));
         inputList1.add(new Element('b', 6));
 
         List<Element> inputList2 = new ArrayList<>();
@@ -78,12 +78,12 @@ public class Topfunnel {
             Character temp = firstMap.getKey();
             Integer value = firstMap.getValue();
             if(!map2.containsKey(temp)){
-                System.out.println("Delete " + firstMap.getValue() + " " + temp +"'s");
+                System.out.println("DELETE " + firstMap.getValue() + " " + temp +"'s");
                 totalCost = totalCost + firstMap.getValue();
             }
             else {
                 if(value > map2.get(temp)){
-                    System.out.println("Delete " + (value-map2.get(temp))  + " " + temp +"'s");
+                    System.out.println("DELETE " + (value-map2.get(temp))  + " " + temp +"'s");
                     totalCost = totalCost + (value-map2.get(temp));
                 }
                 else if(value < map2.get(temp)){
@@ -101,7 +101,7 @@ public class Topfunnel {
         }
 
 
-        System.out.println("Total cost == " + totalCost);
+        System.out.println("Total cost = " + totalCost);
 
     }
 }
