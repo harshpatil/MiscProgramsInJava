@@ -100,8 +100,6 @@ public class Topfunnel {
             totalCost = totalCost + secondMap.getValue();
         }
 
-
         System.out.println("Total cost = " + totalCost);
-
     }
 }
