@@ -1,7 +1,6 @@
 package main.greedy;
 
 /*
-
     Your are given an array of integers prices, for which the i-th element is the price of a
     given stock on day i; and a non-negative integer fee representing a transaction fee.
 
@@ -22,7 +21,7 @@ package main.greedy;
         Selling at prices[5] = 9
         The total profit is ((8 - 1) - 2) + ((9 - 4) - 2) = 8.
 
-    Time Complexity: O(N), where NN is the number of prices.
+    Time Complexity: O(N), where N is the number of prices.
     Space Complexity: O(1), the space used by cash and hold.
 
  */

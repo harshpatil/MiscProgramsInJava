@@ -1,4 +1,4 @@
-package main.greedy;
+package main.machineCoding;
 
 import java.util.ArrayList;
 import java.util.Collections;

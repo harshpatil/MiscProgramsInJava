@@ -75,22 +75,22 @@ public class Topfunnel {
         int totalCost = 0;
         for(Map.Entry<Character, Integer> firstMap : map1.entrySet()){
 
-            Character temp = firstMap.getKey();
+            Character key = firstMap.getKey();
             Integer value = firstMap.getValue();
-            if(!map2.containsKey(temp)){
-                System.out.println("DELETE " + firstMap.getValue() + " " + temp +"'s");
+            if(!map2.containsKey(key)){
+                System.out.println("DELETE " + firstMap.getValue() + " " + key +"'s");
                 totalCost = totalCost + firstMap.getValue();
             }
             else {
-                if(value > map2.get(temp)){
-                    System.out.println("DELETE " + (value-map2.get(temp))  + " " + temp +"'s");
-                    totalCost = totalCost + (value-map2.get(temp));
+                if(value > map2.get(key)){
+                    System.out.println("DELETE " + (value-map2.get(key))  + " " + key +"'s");
+                    totalCost = totalCost + (value-map2.get(key));
                 }
-                else if(value < map2.get(temp)){
-                    System.out.println("ADD " + (map2.get(temp)-value)  + " " + temp +"'s");
-                    totalCost = totalCost + (map2.get(temp)-value);
+                else if(value < map2.get(key)){
+                    System.out.println("ADD " + (map2.get(key)-value)  + " " + key +"'s");
+                    totalCost = totalCost + (map2.get(key)-value);
                 }
-                map2.remove(temp);
+                map2.remove(key);
             }
         }
 
