@@ -31,9 +31,12 @@ public class SearchForGivenElementInBST {
 
         if(root.data == searchElement){
             return true;
-        } else if (root.left == null && root.right == null){
+        }
+
+        if (root.left == null && root.right == null){
             return false;
         }
+
         if(searchElement < root.data){
             return searchForGivenItem(root.left, searchElement);
         } else {
