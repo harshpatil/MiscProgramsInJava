@@ -6,7 +6,7 @@ package main.dataStructures;
 public class StringBuilderImpl {
 
     public static void main(String[] args) throws Exception {
-        
+
         String word1 = "firstWord";
         char[] charArray = new char[word1.length()];
         charArray = storeFirstString(charArray, word1);
