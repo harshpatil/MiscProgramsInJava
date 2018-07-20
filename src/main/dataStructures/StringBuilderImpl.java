@@ -3,19 +3,21 @@ package main.dataStructures;
 /**
  * Implement your own string builder
  */
-public class StringBuilder {
+public class StringBuilderImpl {
 
     public static void main(String[] args) throws Exception {
-
+        
         String word1 = "firstWord";
         char[] charArray = new char[word1.length()];
         charArray = storeFirstString(charArray, word1);
+
         String word2 = "secondWord";
         charArray = concatenate(charArray, word1, word2);
         System.out.println("Concatenated String :::: ");
         for(int i=0; i<charArray.length; i++){
             System.out.print(charArray[i]);
         }
+
         String word3 = "thirdWord";
         charArray = concatenate(charArray, word1+word2, word3);
         System.out.println("\nConcatenated 3rd String :::: ");
