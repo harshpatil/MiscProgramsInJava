@@ -1,7 +1,6 @@
 package main.machineCoding;
 
 /*
-
     2 students can have same score
 
     Time Complexity: O(n)
