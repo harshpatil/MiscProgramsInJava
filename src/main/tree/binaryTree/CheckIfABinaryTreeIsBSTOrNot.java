@@ -76,9 +76,4 @@ public class CheckIfABinaryTreeIsBSTOrNot {
             return isBST(root.right);
         }
     }
-
-    private static boolean isBST() {
-        prev = null;
-        return isBST(tree.root);
-    }
 }

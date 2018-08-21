@@ -30,7 +30,7 @@ public class PrintTreeLineByLineUlta {
         Queue<TreeNode> queue = new LinkedList<>();
         queue.add(root);
         Stack<TreeNode> stack = new Stack<>();
-        while (true){
+        while (!queue.isEmpty()){
             int nodeCount = queue.size();
             if(nodeCount==0){
                 break;
