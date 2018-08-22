@@ -22,6 +22,8 @@ package main.matrix;
      20
 
     http://www.geeksforgeeks.org/zigzag-or-diagonal-traversal-of-matrix/
+
+    Time Complexity : O(row * col)
  *
  * Created by HarshPatil on 9/2/17.
  */
