@@ -6,6 +6,8 @@ import java.io.InputStreamReader;
 /*
     http://www.geeksforgeeks.org/search-an-element-in-a-sorted-and-pivoted-array/
     https://www.geeksforgeeks.org/search-an-element-in-a-sorted-and-pivoted-array/
+
+    Time Complexity : O(2 * log n) => O(lon n)
  */
 public class SearchAnElementInSortedRotatedArray {
 
