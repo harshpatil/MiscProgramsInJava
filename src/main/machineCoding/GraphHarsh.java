@@ -30,7 +30,7 @@ public class GraphHarsh {
 
     private static boolean checkPath(int[] input, int startingIndex){
 
-        if(startingIndex < 0 || startingIndex >= input.length){
+        if(startingIndex < 0 || startingIndex > input.length-1){
             return false;
         }
 
