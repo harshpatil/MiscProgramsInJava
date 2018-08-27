@@ -37,7 +37,7 @@ public class CamelCase {
 
         String input = "saveChangesInTheEditor";
 
-        int count = 1;
+        int count = 0;
         for(int i=0; i<input.length(); i++){
             if(isUpperCase(input.charAt(i))){
                 count++;
