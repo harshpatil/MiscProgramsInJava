@@ -29,6 +29,7 @@ public class MinimumNumberOfJumpsToReachEnd {
             return -1;
         }
 
+
         int maxReach = inputArray[0];
         int step = inputArray[0];
         int jump = 1;
