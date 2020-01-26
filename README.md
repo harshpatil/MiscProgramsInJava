@@ -1,2 +1,2 @@
 # MiscProgramsInJava
-This repositiory contains common programs written Java
+This repositiory contains PS/DS programs
